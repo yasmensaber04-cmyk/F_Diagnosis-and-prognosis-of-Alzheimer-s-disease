@@ -1,0 +1,8 @@
+# تشغيل عادي مع Optuna و Feature Selection
+results = run_pipeline(DATA_PATH, use_optuna=True, use_feature_selection=True, n_trials=20)
+
+# تشغيل سريع (بدون Optuna)
+results = run_pipeline(DATA_PATH, use_optuna=False, use_feature_selection=False)
+
+# تشغيل مع Feature Selection فقط
+results = run_pipeline(DATA_PATH, use_optuna=False, use_feature_selection=True)
